@@ -9,6 +9,8 @@ import {
 import { Sidebar } from "../../components/sidebar";
 import sectionsJson from "../../dummy-data/sections.json";
 import { useState } from "react";
+import { Footer } from "../../components/footer";
+import "./home.css";
 
 type SectionsProps = {
   id: string;
@@ -112,7 +114,10 @@ const Sections: React.FC<SectionsProps> = (props) => {
 
 export const Home = () => {
   return (
-    <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" } }}>
+    <Box
+      className="Home"
+      sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" } }}
+    >
       <Sidebar />
       <Paper>
         <Stack
@@ -133,6 +138,7 @@ export const Home = () => {
           <Sections key={item.id} {...item} />
         ))}
       </Paper>
+      <Footer id="footer" />
     </Box>
   );
 };

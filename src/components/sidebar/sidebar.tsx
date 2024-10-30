@@ -22,6 +22,7 @@ export const Sidebar = () => {
     <Box
       sx={{
         width: { xs: "100%", sm: "25%" },
+        mb: { xs: 2 },
       }}
     >
       <List

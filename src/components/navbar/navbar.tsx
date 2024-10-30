@@ -11,7 +11,7 @@ export const Navbar = () => {
         display: "flex",
         justifyContent: { sm: "space-between" },
         alignItems: "center",
-        height: "40px",
+        height: "60px",
         p: 2,
       }}
     >

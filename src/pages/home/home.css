@@ -1,0 +1,8 @@
+@media screen and (min-width: 600px) {
+  .Home {
+    overflow-y: scroll;
+  }
+  #footer {
+    display: none;
+  }
+}
