@@ -1,30 +1,60 @@
-import { Box, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  List,
+  ListItem,
+  MenuItem,
+  Select,
+  SelectChangeEvent,
+  Typography,
+} from "@mui/material";
 import jsonData from "../../dummy-data/dummy.json";
-import { useEffect, useState } from "react";
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
+import { useState } from "react";
 
 export const Sidebar = () => {
-  const [data, setData] = useState<JSX.Element[]>([]);
-  useEffect(() => {
-    const elements = jsonData.map((item) => {
-      return (
-        <ListItem
-          key={item.id}
-          secondaryAction={<CheckCircleOutlineRoundedIcon color="primary" />}
-        >
-          <Typography variant="body2">{item.name}</Typography>
-        </ListItem>
-      );
-    });
-    setData(elements);
-  }, []);
+  const [dropDownValue, setDropdownValue] = useState<string>("Devices");
+
+  const handleDropdown = (e: SelectChangeEvent) => {
+    setDropdownValue(e.target.value as string);
+  };
+
   return (
     <Box
       sx={{
-        width: "25%",
+        width: { xs: "100%", sm: "25%" },
       }}
     >
-      <List>{data}</List>
+      <List
+        sx={{
+          display: { xs: "none", sm: "block" },
+        }}
+      >
+        {jsonData.map((item) => {
+          return (
+            <ListItem
+              key={item.id}
+              secondaryAction={
+                <CheckCircleOutlineRoundedIcon color="primary" />
+              }
+            >
+              <Typography variant="body2">{item.name}</Typography>
+            </ListItem>
+          );
+        })}
+      </List>
+      <Select
+        value={dropDownValue}
+        onChange={handleDropdown}
+        sx={{ width: "100%", display: { sm: "none" } }}
+      >
+        {jsonData.map((item) => {
+          return (
+            <MenuItem key={item.id} value={item.name}>
+              <Typography variant="body2">{item.name}</Typography>
+            </MenuItem>
+          );
+        })}
+      </Select>
     </Box>
   );
 };

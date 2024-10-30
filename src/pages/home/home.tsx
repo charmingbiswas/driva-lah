@@ -28,8 +28,12 @@ const Sections: React.FC<SectionsProps> = (props) => {
       <Typography variant="h3" sx={{ mb: "20px" }}>
         {props.device_name}
       </Typography>
-      <Stack direction="row" gap={2}>
-        <Stack className="left" sx={{ width: "50%" }} gap={2}>
+      <Stack direction={{ xs: "column", sm: "row" }} gap={2}>
+        <Stack
+          className="left"
+          sx={{ width: { xs: "100%", sm: "50%" } }}
+          gap={2}
+        >
           <Stack className="left_row1">
             <Typography variant="h6">Device type</Typography>
             <TextField
@@ -50,9 +54,16 @@ const Sections: React.FC<SectionsProps> = (props) => {
             </Stack>
           ) : null}
         </Stack>
-        <Stack className="right" sx={{ width: "50%" }} gap={2}>
+        <Stack
+          className="right"
+          sx={{ width: { xs: "100%", sm: "50%" } }}
+          gap={2}
+        >
           <Stack className="right_row1">
-            <Stack direction="row">
+            <Stack
+              direction="row"
+              sx={{ justifyContent: { xs: "space-between" } }}
+            >
               <Typography variant="subtitle1">
                 Bringing your own device?
               </Typography>
@@ -78,7 +89,7 @@ const Sections: React.FC<SectionsProps> = (props) => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "70%",
+                  width: { xs: "100%", sm: "70%" },
                   height: "160px",
                 }}
               >
@@ -101,7 +112,7 @@ const Sections: React.FC<SectionsProps> = (props) => {
 
 export const Home = () => {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" } }}>
       <Sidebar />
       <Paper>
         <Stack
