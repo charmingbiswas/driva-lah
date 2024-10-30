@@ -41,6 +41,12 @@ const themeOptions = (): ThemeOptions => {
         fontFamily: "MuseoSansRounded500",
         fontSize: "22px",
       },
+      h5: {
+        color: "#FFFFFF",
+        opacity: 1,
+        fontFamily: "MuseoSansRounded300",
+        fontSize: "16px",
+      },
       h6: {
         color: "#4A4A4A",
         opacity: 1,

@@ -1,8 +1,9 @@
 import { Box, Typography, styled } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import { theme } from "../../theme";
 
 const StyledNavLink = styled(NavLink)(({}) => ({
-  margin: "5px",
+  marginRight: theme.spacing(5),
 }));
 
 export const Navbar = () => {
@@ -29,13 +30,13 @@ export const Navbar = () => {
         }}
       >
         <StyledNavLink to="#">
-          <Typography variant="body1">Learn more</Typography>
+          <Typography variant="h5">Learn more</Typography>
         </StyledNavLink>
         <StyledNavLink to="#">
-          <Typography variant="body1">List your car</Typography>
+          <Typography variant="h5">List your car</Typography>
         </StyledNavLink>
         <StyledNavLink to="#">
-          <Typography variant="body1">Inbox</Typography>
+          <Typography variant="h5">Inbox</Typography>
         </StyledNavLink>
       </Box>
     </Box>
