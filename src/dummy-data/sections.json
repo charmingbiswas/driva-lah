@@ -1,21 +1,21 @@
 [
   {
-    "key": "1",
+    "id": "1",
     "device_name": "Device 1",
     "device_type": "Primary GPS"
   },
   {
-    "key": "2",
+    "id": "2",
     "device_name": "Device 2",
     "device_type": "Secondary GPS"
   },
   {
-    "key": "3",
+    "id": "3",
     "device_name": "Device 3",
     "device_type": "Device Mate Go"
   },
   {
-    "key": "4",
+    "id": "4",
     "device_name": "Device 4",
     "device_type": "Lockbox"
   }

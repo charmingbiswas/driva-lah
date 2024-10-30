@@ -1,42 +1,42 @@
 [
   {
-    "key": "1",
+    "id": "1",
     "name": "Location"
   },
   {
-    "key": "2",
+    "id": "2",
     "name": "About"
   },
   {
-    "key": "3",
+    "id": "3",
     "name": "Features"
   },
   {
-    "key": "4",
+    "id": "4",
     "name": "Rules"
   },
   {
-    "key": "5",
+    "id": "5",
     "name": "Pricing"
   },
   {
-    "key": "6",
+    "id": "6",
     "name": "Promotion"
   },
   {
-    "key": "7",
+    "id": "7",
     "name": "Pictures"
   },
   {
-    "key": "8",
+    "id": "8",
     "name": "Insurance"
   },
   {
-    "key": "9",
+    "id": "9",
     "name": "Subscription"
   },
   {
-    "key": "10",
+    "id": "10",
     "name": "Devices"
   }
 ]

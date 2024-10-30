@@ -45,7 +45,7 @@ const themeOptions = (): ThemeOptions => {
         color: "#4A4A4A",
         opacity: 1,
         fontFamily: "MuseoSansRounded300",
-        fontSize: "16px",
+        fontSize: "12px",
       },
     },
   };

@@ -9,7 +9,7 @@ export const Sidebar = () => {
     const elements = jsonData.map((item) => {
       return (
         <ListItem
-          key={item.key}
+          key={item.id}
           secondaryAction={<CheckCircleOutlineRoundedIcon color="primary" />}
         >
           <Typography variant="body2">{item.name}</Typography>
@@ -17,7 +17,7 @@ export const Sidebar = () => {
       );
     });
     setData(elements);
-  });
+  }, []);
   return (
     <Box
       sx={{
