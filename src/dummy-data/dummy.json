@@ -1,0 +1,42 @@
+[
+  {
+    "key": "1",
+    "name": "Location"
+  },
+  {
+    "key": "2",
+    "name": "About"
+  },
+  {
+    "key": "3",
+    "name": "Features"
+  },
+  {
+    "key": "4",
+    "name": "Rules"
+  },
+  {
+    "key": "5",
+    "name": "Pricing"
+  },
+  {
+    "key": "6",
+    "name": "Promotion"
+  },
+  {
+    "key": "7",
+    "name": "Pictures"
+  },
+  {
+    "key": "8",
+    "name": "Insurance"
+  },
+  {
+    "key": "9",
+    "name": "Subscription"
+  },
+  {
+    "key": "10",
+    "name": "Devices"
+  }
+]

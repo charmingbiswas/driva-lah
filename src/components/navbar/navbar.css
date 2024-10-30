@@ -1,0 +1,13 @@
+nav {
+  background: #00a3ad 0% 0% no-repeat padding-box;
+  color: #fefefe;
+  opacity: 1;
+  width: 100%;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  height: inherit;
+}
